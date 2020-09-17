@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --main-color: #4b0082;
+  --white-color: #fff;
+  --black-color: #000;
+}
+
+.Main {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-areas: "aside content";
+  font-family: 'Roboto', Helvetica;
+}
+
+.Content {
+  width: 90%;
+  margin: 0 auto;
+  grid-area: content;
+}
+
+.Header {
+  width: 90%;
+  height: 350px;
+  margin: 10px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+.Header div {
+  margin-top: 10px;
+  text-align: center;
+}
+.Header div p,
+.Header div a {
+  margin-top: 5px;
+}
+.Header div a {
+  display: block;
+  color: var(--white-color);
+}
+.Header-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.About {
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+}
+.About h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.About p {
+  margin-bottom: 10px;
+}
+.About ul {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.About ul a {
+  color: var(--white-color);
+}
+
+.Aside {
+  width: 400px;
+  height: 100vh;
+  grid-area: aside;
+  position: fixed;
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+
+.Profile {
+  margin-top: 20px;
+}
+.Profile-title {
+  font-size: 30px;
+}
+.Profile-desc {
+  height: 100px;
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 0 0 10px 2px rgba(0,0,0,0.151);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.Experience {
+  height: 250px;
+  padding: 30px;
+  margin-top: 40px;
+  box-shadow: 0 0 10px 2px rgba(0,0,0,0.151);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.Experience h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.Experience article {
+  margin-top: 10px;
+}
+.Experience article > a {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black-color);
+}
+.Experience article p {
+  margin-top: 5px;
+}
+.Experience article p a {
+  margin: 5px 0 0 10px;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.Skills {
+  padding: 30px;
+  margin-top: 40px;
+  box-shadow: 0 0 10px 2px rgba(0,0,0,0.151);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.Skills h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.Skills li {
+  margin-bottom: 5px;
+}
+.Skills li img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.Interest {
+  margin-bottom: 50px;
+  padding: 30px;
+  margin-top: 40px;
+  box-shadow: 0 0 10px 2px rgba(0,0,0,0.151);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.Interest h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.Interest li {
+  margin-bottom: 5px;
+}
+
